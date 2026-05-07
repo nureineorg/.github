@@ -1,0 +1,15 @@
+# All files — admin-team is the fallback owner
+*                        @plaplu/admin-team
+
+# iOS source files
+*.swift                  @plaplu/ios-team
+*.xcodeproj/             @plaplu/ios-team
+Package.swift            @plaplu/ios-team
+
+# backend source files
+*.go                     @plaplu/backend-team
+
+# Security-sensitive paths require security-team review
+**/auth/**               @plaplu/security-team @plaplu/backend-team @plaplu/ios-team
+**/keychain/**           @plaplu/security-team @plaplu/ios-team
+**/crypto/**             @plaplu/security-team @plaplu/ios-team
